@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de suscripción</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>🏃‍♂️ ¡Únete a nuestro equipo!</h2>
+        <p class="subtitle">Recibe las mejores ofertas en ropa deportiva</p>
+
+        <div class="promo-banner">🎉 ¡10% de descuento en tu primera compra!</div>
+
+        <form id="form">
+            
+            <label>Email <span class="required">*</span></label>
+            <input type="email" id="email" placeholder="tu@email.com" required>
+
+            <label>Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre">
+
+            <label>¿Qué te interesa? <span class="optional">(opcional)</span></label>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" class="interest" value="Calzado deportivo"> Calzado deportivo</label>
+                <label><input type="checkbox" class="interest" value="Ropa para hombre"> Ropa para hombre</label>
+                <label><input type="checkbox" class="interest" value="Ropa para mujer"> Ropa para mujer</label>
+                <label><input type="checkbox" class="interest" value="Accesorios"> Accesorios</label>
+            </div>
+
+            <div class="terms">
+                <label>
+                    <input type="checkbox" id="terms">
+                    Acepto la <a href="#">política de privacidad</a> y deseo recibir promociones *
+                </label>
+            </div>
+
+            <button type="submit" id="btn-submit">Suscribirme ahora</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
